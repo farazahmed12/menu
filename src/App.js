@@ -1,6 +1,7 @@
 import "./App.css";
 import ListMenu from "./ListMenu";
 import RightMenu from "./RightMenu";
+import FormModal from "./FormModal";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
           <ListMenu />
         </div>
         <div className="col-md-9">
-          <RightMenu />
+          <FormModal />
         </div>
       </div>
     </div>
