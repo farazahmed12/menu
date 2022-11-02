@@ -1,72 +1,62 @@
 import React from "react";
 
+import Flavor1 from "./components/Flavor1";
+import Flavor2 from "./components/Flavor2";
+import Flavor3 from "./components/Flavor3";
+import Crust from "./components/Crust";
+import Topping from "./components/Topping";
+import Extra from "./components/Extra";
+
 const RightMenu = () => {
   return (
-    <div>
-      <h2>Choose Your 1st Flavor</h2>
-      <p>Select One</p>
-      <div className="container">
-        <div className="row">
-          <div class="card mx-2 my-2 green active font-weight-bold bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green  font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2  font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-          <div class="card mx-2 my-2 green font-weight-bold  bg-grid">
-            <div class="card-body">Creamy Super Max</div>
-          </div>
-        </div>
-        <div className="row mt-5">
-          <h4 className="my-3">Special Instructions</h4>
-          <textarea
-            class="form-control bg-light text-white"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-          <button
-            type="button"
-            class=" my-3 mr-2 btn btn-secondary btn-lg  btn-block col-md-5"
-          >
-            Cancel
-          </button>
-          <button
-            type="button"
-            class=" my-3 ml-2 btn btn-submit btn-lg btn-block col-md-5"
-          >
-            Submit
-          </button>
-        </div>
+    <div class="tab-content" id="v-pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="v-pills-flavor1"
+        role="tabpanel"
+        aria-labelledby="v-pills-home-tab"
+      >
+        <Flavor1 />
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-flavor2"
+        role="tabpanel"
+        aria-labelledby="v-pills-profile-tab"
+      >
+        <Flavor2 />
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-flavor3"
+        role="tabpanel"
+        aria-labelledby="v-pills-messages-tab"
+      >
+        <Flavor3 />
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-crust"
+        role="tabpanel"
+        aria-labelledby="v-pills-settings-tab"
+      >
+        <Crust />
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-topping"
+        role="tabpanel"
+        aria-labelledby="v-pills-settings-tab"
+      >
+        <Topping />
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-extra"
+        role="tabpanel"
+        aria-labelledby="v-pills-settings-tab"
+      >
+        <Extra />
       </div>
     </div>
   );

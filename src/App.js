@@ -1,19 +1,18 @@
 import "./App.css";
-import ListMenu from "./ListMenu";
-import RightMenu from "./RightMenu";
+import React from "react";
+import { Button } from "react-bootstrap";
+
 import FormModal from "./FormModal";
 
 function App() {
+  const [modal, setModal] = React.useState(false);
+
   return (
     <div className="container mt-5">
-      <div className="row">
-        <div className="col-md-3">
-          <ListMenu />
-        </div>
-        <div className="col-md-9">
-          <FormModal />
-        </div>
-      </div>
+      <Button variant="primary" onClick={() => setModal(true)}>
+        Form modal
+      </Button>
+      <FormModal closeModal={setModal} modal={modal} />
     </div>
   );
 }

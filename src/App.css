@@ -10,3 +10,14 @@
   background-color: #3dc4a0 !important;
   color: white !important;
 }
+.modal-dialog{
+  max-width: 80%;  
+}
+.modal-body {
+  max-height: 80vh; 
+  overflow-y: auto;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #3dc4a0;
+}
